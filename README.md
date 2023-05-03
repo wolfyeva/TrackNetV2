@@ -2,6 +2,9 @@
 Our pre-tained model weight can be download [HERE](https://drive.google.com/file/d/1_mrzOAAGsn2DAI7T1igJ9pYKabV278lb/view?usp=sharing).
 Please put it in `models/`
 
+### Example Google Colab code
+https://colab.research.google.com/drive/1TszsO2RmbS8Q6nK4x56MWaHMenCwBMsQ?usp=sharing
+
 ### File Structure
 Dataset description: https://hackmd.io/Nf8Rh1NrSrqNUzmO0sQKZw 
 Remember to set the data root directory in utils.py.
