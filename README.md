@@ -1,3 +1,6 @@
+###
+Our pre-tained model can be download ![HERE](https://drive.google.com/file/d/1_mrzOAAGsn2DAI7T1igJ9pYKabV278lb/view?usp=sharing).
+
 ### File Structure
 Dataset description: https://hackmd.io/Nf8Rh1NrSrqNUzmO0sQKZw 
 Remember to set the data root directory in utils.py.
