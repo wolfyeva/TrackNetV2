@@ -1,5 +1,6 @@
 ### DOWNLOAD our Model weight
 Our pre-tained model weight can be download [HERE](https://drive.google.com/file/d/1_mrzOAAGsn2DAI7T1igJ9pYKabV278lb/view?usp=sharing).
+Please put it in `models/`
 
 ### File Structure
 Dataset description: https://hackmd.io/Nf8Rh1NrSrqNUzmO0sQKZw 
@@ -57,16 +58,16 @@ Resume training
 
 ### Evaluate TrackNet
 Step 1: evaluate TrackNet on train and test set
-`python3 evaluation.py --batch_size 20 --model_file TrackNetV2/model_best.pt --save_dir TrackNetV2/eval`
+`python3 evaluation.py --batch_size 20 --model_file models/model_best.pt --save_dir models/eval`
 
 Step 2: gather the evaluation results (optional)
-`python3 evaluation.py --batch_size 20 --model_file TrackNetV2/model_best.pt --save_dir TrackNetV2/eval --analyze`
+`python3 evaluation.py --batch_size 20 --model_file models/model_best.pt --save_dir models/eval --analyze`
 
 ### Show predicted video with label (for evaluation)
-`python3 show_rally.py --frame_dir TrackNetV2_Dataset/test/match1/frame/1_05_02 --model_file TrackNetV2/model_best.pt --batch_size 20 --output_mode both --save_dir TrackNetV2/eval`
+`python3 show_rally.py --frame_dir TrackNetV2_Dataset/test/match1/frame/1_05_02 --model_file models/model_best.pt --batch_size 20 --output_mode both --save_dir models/eval`
 
 ### Prediction
-`python3 predict.py --video_file test.mp4 --model_file TrackNetV2/model_best.pt --save_dir prediction`
+`python3 predict.py --video_file test.mp4 --model_file models/model_best.pt --save_dir prediction`
 
 ### Show trajectory
 `python3 show_trajectory.py --video_file test.mp4 --csv_file prediction/test_ball.csv --save_dir prediction`
